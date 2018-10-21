@@ -31,7 +31,7 @@ namespace Key_ValueStore
                 {
                     if (arr[i].key == key)
                     {
-                        arr[i] = new KeyValue(key, arr[i].value);
+                        arr[i] = new KeyValue(key, value);
                         isNew = false;
                     }
                 }
