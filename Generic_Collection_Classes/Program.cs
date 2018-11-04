@@ -91,7 +91,11 @@ namespace Generic_Collection_Classes
             PrintDescription("StoredList<char, string>");
             foreach (var x in mySortedList) { Console.WriteLine(x); }
 
-            HashSet<bool> myHashSet = new HashSet<bool>();
+            HashSet<int> myHashSet = new HashSet<int>();
+            for (int i = 1; i <= 5; i++) { myHashSet.Add(i); }
+            PrintDescription("HashSet<int>");
+            foreach (var x in myHashSet) { Console.WriteLine(x); }
+
         }
 
         static void PrintDescription(string dataStruct) => Console.WriteLine($"\nValues of {dataStruct}:");
