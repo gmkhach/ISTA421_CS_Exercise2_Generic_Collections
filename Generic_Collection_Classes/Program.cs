@@ -55,10 +55,41 @@ namespace Generic_Collection_Classes
                 }
                 myDictionary.Add(number, i);
             }
-            PrintDescription("Stack<bool>");
+            PrintDescription("myDictionary<string, int>");
             foreach (var x in myDictionary) { Console.WriteLine(x); }
 
             SortedList<char, string> mySortedList = new SortedList<char, string>();
+            char symbol = ' ';
+            string name = "";
+            for (int i = 1; i <= 5; i++)
+            {
+                switch (i)
+                {
+                    case 1:
+                        symbol = '@';
+                        name = "at";
+                        break;
+                    case 2:
+                        symbol = '#';
+                        name = "hashtag";
+                        break;
+                    case 3:
+                        symbol = '&';
+                        name = "ampersand";
+                        break;
+                    case 4:
+                        symbol = '%';
+                        name = "percent";
+                        break;
+                    case 5:
+                        symbol = '*';
+                        name = "asterisk";
+                        break;
+                }
+                mySortedList.Add(symbol, name);
+            }
+            PrintDescription("StoredList<char, string>");
+            foreach (var x in mySortedList) { Console.WriteLine(x); }
 
             HashSet<bool> myHashSet = new HashSet<bool>();
         }
