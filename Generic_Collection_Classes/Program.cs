@@ -32,6 +32,31 @@ namespace Generic_Collection_Classes
             foreach (var x in myStack) { Console.WriteLine(x); }
 
             Dictionary<string, int> myDictionary = new Dictionary<string, int>();
+            string number = "";
+            for (int i = 1; i <= 5; i++)
+            {
+                switch (i)
+                    {
+                    case 1:
+                        number = "one";
+                        break;
+                    case 2:
+                    number = "two";
+                        break;
+                    case 3:
+                        number = "three";
+                        break;
+                    case 4:
+                        number = "four";
+                        break;
+                    case 5:
+                        number = "five";
+                        break;
+                }
+                myDictionary.Add(number, i);
+            }
+            PrintDescription("Stack<bool>");
+            foreach (var x in myDictionary) { Console.WriteLine(x); }
 
             SortedList<char, string> mySortedList = new SortedList<char, string>();
 
