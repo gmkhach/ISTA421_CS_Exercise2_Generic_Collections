@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2019
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Key-ValueStore", "Key-ValueStore\Key-ValueStore.csproj", "{75B0C882-33A9-40AF-B0CD-08216D91951C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic_Collections", "Generic_Collections\Generic_Collections.csproj", "{75B0C882-33A9-40AF-B0CD-08216D91951C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {368569FC-944C-4D76-8643-5F5BF355428A}
+		SolutionGuid = {8229BB6F-3B68-4289-BB3D-74FD7D885A03}
 	EndGlobalSection
 EndGlobal
