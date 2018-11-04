@@ -22,7 +22,7 @@ namespace Key_ValueStore
     {
         static void Main()
         {
-            var d = new MyDictionary<string>();
+            var d = new MyDictionary<int>();
             try
             {
                 Console.WriteLine(d["Cats"]);
@@ -33,7 +33,7 @@ namespace Key_ValueStore
             }
             d["Cats"] = 42;
             d["Dogs"] = 17;
-            Console.WriteLine($"{(int)d["Cats"]}, {(int)d["Dogs"]}");
+            Console.WriteLine($"{d["Cats"]}, {d["Dogs"]}");
         }
     }
 }
