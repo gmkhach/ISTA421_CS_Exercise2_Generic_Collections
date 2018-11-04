@@ -22,6 +22,9 @@ namespace Generic_Collection_Classes
             foreach (var x in myLinkedList) { Console.WriteLine(x); }
 
             Queue<char> myQueue = new Queue<char>();
+            foreach (var ch in "abcdef") { myQueue.Enqueue(ch); }
+            PrintDescription("Queue");
+            foreach (var x in myQueue) { Console.WriteLine(x); }
 
             Stack<double> myStack = new Stack<double>();
 
