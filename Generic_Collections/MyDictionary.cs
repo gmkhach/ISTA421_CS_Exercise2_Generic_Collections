@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace Key_ValueStore
 {
-    class MyDictionary
+    class MyDictionary<T>
     {
-        private KeyValue[] arr = new KeyValue[10];
+        private KeyValue<T>[] arr = new KeyValue<T>[10];
         private int count = 0;
 
-        public object this[string key]
+        public T this[string key]
         {
             get
             {
-                foreach (KeyValue x in arr)
+                foreach (KeyValue<T> x in arr)
                 {
-                    if (x.key == key)
+                    if (x.Key == key)
                     {
-                        return x.value;
+                        return x.Value;
                     }
                 }
                 throw new KeyNotFoundException();
@@ -29,15 +29,15 @@ namespace Key_ValueStore
                 bool isNew = true;
                 for (int i = 0; i < count; i++)
                 {
-                    if (arr[i].key == key)
+                    if (arr[i].Key == key)
                     {
-                        arr[i] = new KeyValue(key, value);
+                        arr[i] = new KeyValue<T>(key, value);
                         isNew = false;
                     }
                 }
                 if (isNew && count != 10)
                 {
-                    arr[count++] = new KeyValue(key, value);
+                    arr[count++] = new KeyValue<T>(key, value);
                 }
                 else
                 {

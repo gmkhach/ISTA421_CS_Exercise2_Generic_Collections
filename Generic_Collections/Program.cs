@@ -6,23 +6,23 @@ using System.Threading.Tasks;
 
 namespace Key_ValueStore
 {
-    struct KeyValue
+    struct KeyValue<T>
     {
-        public KeyValue(string key, object value)
+        public KeyValue(string key, T value)
         {
-            this.key = key;
-            this.value = value;
+            Key = key;
+            Value = value;
         }
 
-        public readonly string key;
-        public readonly object value;
+        public string Key { get; }
+        public T Value { get; }
     }
 
     class Program
     {
         static void Main()
         {
-            var d = new MyDictionary();
+            var d = new MyDictionary<string>();
             try
             {
                 Console.WriteLine(d["Cats"]);
